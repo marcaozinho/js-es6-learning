@@ -1,0 +1,46 @@
+<head>
+<script src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+</head>
+
+<script type="text/javascript">
+
+function getUserData(username) {
+	return new Promise(function(resolve, reject) {
+		const settings = {
+			url: `https://api.github.com/users/${username}`,
+			method: 'GET',
+			error: reject,
+			success: resolve,
+		};
+
+		$.ajax(settings);
+	});
+}
+
+
+const users = ['marcaozinho', 'wormangel'];
+
+const promises = users.map(function(username) {
+	return getUserData(username);
+});
+
+console.log(promises);
+
+Promise.all(promises).then(function(users) {
+	// console.log(users);
+	return users.map(function(user){
+		return user.name;
+	});
+}).then(function(names) {
+	return names.map(function(name) {
+		return name.toUpperCase();
+	});
+}).then(function(names) {
+	console.log(names);
+});
+
+console.log('opa');
+
+</script>
