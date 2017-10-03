@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 // também functiona
 // const obj = {
 // 	metodo: function() {
@@ -34,5 +32,3 @@ const obj = {
 obj[METODO]('correr');
 
 console.log(obj);
-
-</script>

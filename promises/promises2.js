@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 function loadUser(callback, onError) {
 	setTimeout(function() {
 		const user = {name: 'vinicius', id: 73};
@@ -18,16 +16,19 @@ function now() {
 	return (new Date()).getMilliseconds();
 }
 
+function onLoadUser(user) {
+	console.log(now(), user);
+	loadPosts(undefined, onLoadPosts);
+	console.log(now(), 'teste2');
+}
+
+function onLoadPosts(posts) {
+	console.log(now(), posts);
+	console.log(now(), 'finish loading');
+}
+
 console.log(now(), 'start loading');
 
-loadUser(function(user) {
-	console.log(now(), user);
-	loadPosts(undefined, function(posts) {
-		console.log(now(), posts);
-		console.log(now(), 'finish loading');
-	});
-});
+loadUser(onLoadUser);
 
-
-
-</script>
+console.log(now(), 'teste');

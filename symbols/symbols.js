@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 const A = Symbol('A');	
 const B = Symbol('B');
 const C = Symbol('A');
@@ -21,5 +19,3 @@ const obj = {
 
 obj[LOG]();
 console.log(obj[A]);
-
-</script>

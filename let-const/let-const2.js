@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 // const arr = ['a', 'b', 'c', 'd'];
 
 // for (var i = 0; i < arr.length; i++) {
@@ -36,5 +34,3 @@ for (let i = 0; i < arr.length; i++) {
 		alert(current); 
 	}, i * 4000);
 }
-	
-</script>

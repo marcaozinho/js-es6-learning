@@ -1,5 +1,4 @@
-<script type="text/javascript">
-	
+
 // let a = 'a';
 // console.log(a);
 
@@ -49,6 +48,3 @@ for (var i = 0; i < arr.length; i++) {
 }
 
 console.log(i, current);
-
-
-</script>

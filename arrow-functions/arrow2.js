@@ -1,6 +1,4 @@
 
-<script type="text/javascript">
-
 //this lexico
 // a function de dentro cria um novo escopo e dentro dele 'this' é window
 
@@ -31,7 +29,7 @@
 // 	}.bind(this), 3000);
 // }
 
-// corrigindo
+// refatorando
 
 const VOANDO = Symbol('VOANDO');
 
@@ -52,5 +50,3 @@ const politico = new Inseto('Sásá');
 setTimeout(function(){
 	politico.morrer();
 }, 10000);
-
-</script>

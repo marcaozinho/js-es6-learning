@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 // function loadUser() {
 // 	return new Promise(function(resolve) {
 // 		setTimeout(function() {
@@ -77,7 +75,3 @@ loadUser().then(function(user) {
 	console.log(err);
 	console.log(now(), 'finish err');
 });
-
-
-
-</script>

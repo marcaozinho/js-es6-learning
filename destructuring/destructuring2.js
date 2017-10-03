@@ -1,5 +1,3 @@
-<script type="text/javascript">
-	
 // const obj = {
 // 	a: 'a1',
 // 	b: 'b2',
@@ -32,5 +30,3 @@
 import lodash from 'lodash';
 
 const isArray = lodash.isArray;
-
-</script>
